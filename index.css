@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #fffaf3;
+  color: #292321;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}

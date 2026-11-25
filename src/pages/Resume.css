@@ -1,0 +1,828 @@
+/* =========================
+   RESUME SECTION
+========================= */
+
+.resume-page {
+  padding: 35px 6%;
+  background: #f7f5ff;
+
+  background-image:
+    linear-gradient(rgba(123, 153, 220, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 153, 220, 0.12) 1px, transparent 1px);
+
+  background-size: 45px 45px;
+  scroll-margin-top: 80px;
+}
+
+.resume-wrapper {
+  max-width: 1450px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 28px;
+
+  background: linear-gradient(
+    120deg,
+    #9edfff,
+    #c7c4ff,
+    #f3b6e8
+  );
+
+  box-shadow: 0 15px 45px rgba(126, 110, 220, 0.2);
+}
+
+.resume-inner {
+  min-height: 550px;
+  padding: 55px 6%;
+  border: 2px solid #29263c;
+  border-radius: 22px;
+
+  background-color: rgba(255, 255, 255, 0.96);
+
+  background-image:
+    linear-gradient(rgba(111, 153, 210, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 153, 210, 0.08) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+/* HEADING */
+
+.resume-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.resume-heading > span {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 30px;
+
+  background: #f5e8ff;
+  color: #a46acb;
+
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.resume-heading h1 {
+  margin: 20px 0 12px;
+
+  font-size: clamp(45px, 6vw, 75px);
+  font-weight: 1000;
+  letter-spacing: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #479fdf,
+    #8566d6,
+    #e77bc6
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.resume-heading p {
+  color: #8c839d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* RESUME CARD */
+
+.resume-card {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 45px 25px;
+
+  text-align: center;
+
+  background: white;
+  border: 1px solid #e9dff7;
+  border-radius: 22px;
+
+  box-shadow: 0 10px 30px rgba(120, 100, 170, 0.09);
+
+  transition: 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 35px rgba(120, 100, 170, 0.16);
+}
+
+.resume-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 42px;
+  border-radius: 22px;
+
+  background: linear-gradient(
+    135deg,
+    #d7c2ff,
+    #f3d5f5
+  );
+}
+
+.resume-card h2 {
+  color: #39314d;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.resume-card p {
+  color: #898195;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+
+.resume-open-btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border-radius: 25px;
+
+  background: #343047;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.resume-open-btn:hover {
+  background: #936acb;
+  transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+.resume-footer {
+  margin-top: 45px;
+  padding-top: 20px;
+  border-top: 1px solid #eee4f6;
+
+  text-align: center;
+  color: #b09ac9;
+
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .resume-page {
+    padding: 15px;
+  }
+
+  .resume-wrapper {
+    padding: 15px;
+  }
+
+  .resume-inner {
+    padding: 35px 18px;
+  }
+
+  .resume-heading {
+    margin-bottom: 40px;
+  }
+
+  .resume-heading h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+
+  .resume-heading p {
+    font-size: 12px;
+  }
+
+  .resume-card {
+    padding: 35px 18px;
+  }
+}
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.resume-open-btn,
+.resume-download-btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.resume-open-btn {
+  background: #29263c;
+  color: white;
+}
+
+.resume-download-btn {
+  background: linear-gradient(90deg, #479fdf, #8566d6, #e77bc6);
+  color: white;
+}
+
+.resume-open-btn:hover,
+.resume-download-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(126, 110, 220, 0.25);
+}
+/* =========================
+   RESUME MINI GAME
+========================= */
+
+.resume-game {
+  max-width: 750px;
+  margin: 65px auto 20px;
+  padding: 35px 25px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e9dff7;
+  border-radius: 25px;
+
+  box-shadow: 0 12px 35px rgba(120, 100, 170, 0.10);
+}
+
+.resume-game h2 {
+  color: #39314d;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.resume-game > p {
+  color: #898195;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+/* GAME BOX */
+
+.game-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #e5f3ff,
+    #eee5ff,
+    #ffe9f6
+  );
+
+  border: 2px solid #d9c9f0;
+  border-radius: 20px;
+}
+
+/* GAME TITLE */
+
+.game-box h2 {
+  color: #8566d6;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.game-box > p {
+  color: #898195;
+  font-size: 12px;
+}
+
+/* SCORE */
+
+.game-score {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 8px 20px;
+
+  background: white;
+  color: #8566d6;
+
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* GAME AREA */
+
+.game-area {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    #dff3ff,
+    #f6eaff
+  );
+
+  border-radius: 15px;
+  border: 1px solid #d7c2ff;
+
+  cursor: pointer;
+}
+
+/* DINOSAUR */
+
+.game-character {
+  position: absolute;
+  left: 10%;
+  font-size: 42px;
+
+  transition: bottom 0.3s ease;
+
+  z-index: 2;
+}
+
+/* CACTUS */
+
+.game-obstacle {
+  position: absolute;
+  bottom: 12px;
+  font-size: 35px;
+  z-index: 2;
+}
+
+/* GROUND */
+
+.game-ground {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #479fdf,
+    #8566d6,
+    #e77bc6
+  );
+}
+
+/* GAME OVER */
+
+.game-result {
+  margin-top: 20px;
+  padding: 20px;
+
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #e9dff7;
+}
+
+.game-result h3 {
+  color: #8566d6;
+  font-size: 22px;
+}
+
+.game-result p {
+  color: #898195;
+  margin: 10px 0;
+}
+
+.game-result button {
+  padding: 11px 25px;
+  border: none;
+  border-radius: 25px;
+
+  background: linear-gradient(
+    90deg,
+    #479fdf,
+    #8566d6,
+    #e77bc6
+  );
+
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.game-result button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(126, 110, 220, 0.25);
+}
+
+/* GAME HINT */
+
+.game-hint {
+  margin-top: 18px;
+  color: #a08bbd;
+  font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .resume-game {
+    margin-top: 40px;
+    padding: 25px 15px;
+  }
+
+  .resume-game h2 {
+    font-size: 21px;
+  }
+
+  .game-box {
+    padding: 15px;
+  }
+
+  .game-area {
+    height: 150px;
+  }
+
+  .game-character {
+    font-size: 35px;
+  }
+}
+/* GAME ALWAYS VISIBLE ON RESUME PAGE */
+
+.resume-game {
+  display: block;
+  max-width: 750px;
+  margin: 65px auto 20px;
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e9dff7;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(120, 100, 170, 0.10);
+}
+
+/* REMOVE POPUP BEHAVIOUR */
+
+.game-overlay {
+  position: static !important;
+  display: block !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.game-close {
+  display: none !important;
+}
+
+.game-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #e5f3ff, #eee5ff, #ffe9f6);
+  border: 2px solid #d9c9f0;
+  border-radius: 20px;
+}
+/* =========================
+   APOORVA DINO ADVENTURE
+========================= */
+
+.resume-game {
+  display: block;
+  max-width: 850px;
+  margin: 60px auto 30px;
+  padding: 35px 25px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e9dff7;
+  border-radius: 25px;
+
+  box-shadow: 0 12px 35px rgba(120, 100, 170, 0.10);
+}
+
+.resume-game > h2 {
+  color: #8566d6;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.resume-game > p {
+  color: #898195;
+  font-size: 13px;
+}
+
+/* GAME BOX */
+
+.game-box {
+  width: 100%;
+  max-width: 750px;
+  margin: 25px auto 0;
+  padding: 22px;
+
+  background: linear-gradient(
+    135deg,
+    #e5f3ff,
+    #eee5ff,
+    #ffe9f6
+  );
+
+  border: 2px solid #d9c9f0;
+  border-radius: 22px;
+}
+
+.game-box h2 {
+  color: #8566d6;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.game-box > p {
+  color: #898195;
+  font-size: 13px;
+}
+
+/* SCORE */
+
+.game-score {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 9px 25px;
+
+  background: white;
+  color: #8566d6;
+
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 900;
+
+  border: 1px solid #e9dff7;
+}
+
+/* CANVAS */
+
+.dino-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 16px;
+  border: 1px solid #d7c2ff;
+
+  cursor: pointer;
+  touch-action: manipulation;
+  outline: none;
+}
+
+.dino-canvas:focus-visible {
+  outline: 3px solid #8566d6;
+  outline-offset: 4px;
+}
+
+/* CONTROLS */
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.game-controls span {
+  padding: 9px 14px;
+
+  background: white;
+  color: #8566d6;
+
+  border: 1px solid #e9dff7;
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* HINT */
+
+.game-hint {
+  margin-top: 20px;
+  color: #a08bbd;
+  font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .resume-game {
+    padding: 22px 12px;
+    margin-top: 40px;
+  }
+
+  .game-box {
+    padding: 12px;
+  }
+
+  .game-box h2 {
+    font-size: 19px;
+  }
+
+  .game-controls {
+    gap: 7px;
+  }
+
+  .game-controls span {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+}
+/* =========================
+   RESUME GAME
+========================= */
+
+.resume-game {
+  display: block;
+  max-width: 850px;
+  margin: 60px auto 30px;
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e9dff7;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(120, 100, 170, 0.10);
+}
+
+.resume-game > h2 {
+  color: #8566d6;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.resume-game > p {
+  color: #898195;
+  font-size: 13px;
+}
+
+.game-box {
+  width: 100%;
+  max-width: 750px;
+  margin: 25px auto 0;
+  padding: 22px;
+  background: linear-gradient(
+    135deg,
+    #e5f3ff,
+    #eee5ff,
+    #ffe9f6
+  );
+  border: 2px solid #d9c9f0;
+  border-radius: 22px;
+}
+
+.game-box h2 {
+  color: #8566d6;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.game-box > p {
+  color: #898195;
+  font-size: 13px;
+}
+
+.game-score {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 9px 25px;
+  background: white;
+  color: #8566d6;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 900;
+  border: 1px solid #e9dff7;
+}
+
+.dino-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #d7c2ff;
+  cursor: pointer;
+  touch-action: manipulation;
+  outline: none;
+}
+
+.dino-canvas:focus-visible {
+  outline: 3px solid #8566d6;
+  outline-offset: 4px;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.game-controls span {
+  padding: 9px 14px;
+  background: white;
+  color: #8566d6;
+  border: 1px solid #e9dff7;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.game-hint {
+  margin-top: 20px;
+  color: #a08bbd;
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .resume-game {
+    padding: 22px 12px;
+    margin-top: 40px;
+  }
+
+  .game-box {
+    padding: 12px;
+  }
+
+  .game-box h2 {
+    font-size: 19px;
+  }
+
+  .game-controls {
+    gap: 7px;
+  }
+
+  .game-controls span {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+}
+/* GAME OVER AND TRY AGAIN */
+
+.game-canvas-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.game-over-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 16px;
+  z-index: 5;
+}
+
+.game-over-panel h2 {
+  color: #8566d6;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.game-over-panel p {
+  color: #e77bc6;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.try-again-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #a58ae8, #e77bc6);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.try-again-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(133, 102, 214, 0.3);
+}
