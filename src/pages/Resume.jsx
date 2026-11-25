@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Resume.css";
-
-const resumePath = "/Apoorva.M.Maganur_Resume.pdf";
+const resumePath = "/apoorva-react-portfolio/Apoorva.M.Maganur_Resume.pdf";
 
 const GAME_WIDTH = 900;
 const GAME_HEIGHT = 280;
